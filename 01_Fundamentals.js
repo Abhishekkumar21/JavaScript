@@ -18,11 +18,21 @@ message();  // function calling
    In this , there is no function name after "function" keyword rather than there a variable assigned with the function definition.
    this variable is considered as function name.
    -- we do same in case of fuction declaration but in different way.
-   Actually , FUCTION IS A VALUE.
+   
+   Actually , FUCTION IS A VALUE representing an "Action".
 */
 
 let message1 = function (){
     console.log("Hello! This is message1() function body statement.");
-}
+};
 message1(); // function calling.
 
+//example: Function Expression
+
+let add = function (a,b){
+         return (a+b);
+};
+let num1 = +prompt("Enter first value:", "");
+let num2 = +prompt("Enter Second value:", "");
+let res = add(num1, num2);
+console.log(res);
